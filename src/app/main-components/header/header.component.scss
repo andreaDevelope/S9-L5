@@ -1,0 +1,22 @@
+.navbar {
+  background: linear-gradient(135deg, purple, #97c1a9, #f4d06f);
+  color: white;
+  padding: 15px;
+}
+
+.navbar .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #f4d06f;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler-icon {
+  background-image: linear-gradient(135deg, #f4d06f, purple);
+}
