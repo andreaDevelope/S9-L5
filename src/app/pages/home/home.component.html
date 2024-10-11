@@ -1,39 +1,79 @@
 <div class="hero py-5">
   <div class="text-center">
-    <h1 class="fw-bolder py-3">Auto del Mese</h1>
+    <div class="d-flex align-items-center justify-content-center">
+      <img
+        src="https://www.ceccarelligroup.it/static/images/logo_ceccarelli.png"
+        height="40"
+        class="rounded-5 mb-3 me-3"
+        alt="logo-ceccarelli"
+      />
+      <h1 class="fw-bolder py-3">Autosalone Ceccarelli</h1>
+    </div>
+    <h2>auto del mese</h2>
   </div>
 
-  <div class="card border-0 card-hero rounded-5">
+  <div class="card border-0 card-hero rounded-5" *ngIf="carArr.length > 0">
     <img
-      src="https://www.prontomycar.it/wp-content/uploads/2021/01/FIAT500X637462205602606489_big-1-495x340.png"
+      src="{{ carArr[0 + 4].modelImage }}"
       class="card-img-top"
       alt="img-macchina-mese"
     />
-    <div class="card-body text-center bg-success rounded-5">
-      <h5 class="card-title">Card title</h5>
+    <div
+      class="card-body text-center {{
+        carArr[0 + 4].availabilityClass
+      }} rounded-5"
+    >
+      <h5 class="card-title">{{ carArr[0 + 4].model }}</h5>
       <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+        vitae quisquam sequi impedit voluptatibus cumque accusamus harum facere
+        officia, rem, rerum atque fuga error ipsum temporibus voluptas eligendi
+        distinctio! Repudiandae!
       </p>
-      <a routerLink="/fiat" class="btn btn-primary">vai al brand</a>
+      <div class="img-logo">
+        <img
+          src="{{ carArr[0 + 4].brandLogo }}"
+          alt="logo-car-brand"
+          class="me-2"
+        />
+        <a routerLink="{{ carArr[0 + 4].brand }}" class="btn btn-primary"
+          >vai al brand</a
+        >
+      </div>
     </div>
   </div>
 </div>
 
 <section>
-  <div class="card border-0 mt-5 rounded-5">
-    <img
-      src="https://www.prontomycar.it/wp-content/uploads/2021/01/FIAT500X637462205602606489_big-1-495x340.png"
-      class="card-img-top"
-      alt="img-macchina-mese"
-    />
-    <div class="card-body text-center bg-success rounded-5">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
-      <a routerLink="/fiat" class="btn btn-primary">vai al brand</a>
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">Nel Nostro Autosalone</h2>
+      <div class="col-12 col-md-6" *ngFor="let car of carArr">
+        <div class="card border-0 mt-5 rounded-5">
+          <img
+            src="{{ car.modelImage }}"
+            class="card-img-top"
+            alt="img-macchina"
+          />
+          <div
+            class="card-body text-center {{ car.availabilityClass }} rounded-5"
+          >
+            <h5 class="card-title">{{ car.model }}</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              accusantium laboriosam numquam quod, exercitationem vel nobis
+              molestiae eius explicabo magnam vitae, libero quos nesciunt
+              voluptatum dolore similique, nam cumque aut!
+            </p>
+            <div class="d-flex justify-content-center gap-2 img-logo">
+              <img src="{{ car.brandLogo }}" alt="logo-car-brand" />
+              <a routerLink="{{ car.brand }}" class="btn btn-primary"
+                >vai al brand</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

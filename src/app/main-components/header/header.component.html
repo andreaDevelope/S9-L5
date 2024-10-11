@@ -9,15 +9,18 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
+      (click)="toggleNavbar()"
       aria-controls="navbarSupportedContent"
-      aria-expanded="false"
+      aria-expanded="isNavbarCollapsed"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <p>menù</p>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ show: !isNavbarCollapsed }"
+      id="navbarSupportedContent"
+    >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a
@@ -31,7 +34,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/audi"
+            routerLink="/Audi"
             routerLinkActive="text-primary"
             [routerLinkActiveOptions]="{ exact: true }"
             >audi</a
@@ -40,7 +43,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/fiat"
+            routerLink="/Fiat"
             routerLinkActive="text-primary"
             [routerLinkActiveOptions]="{ exact: true }"
             >fiat</a
@@ -49,13 +52,25 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="/ford"
+            routerLink="/Ford"
             routerLinkActive="text-primary"
             [routerLinkActiveOptions]="{ exact: true }"
             >ford</a
           >
         </li>
       </ul>
+
+      <form class="d-flex" (ngSubmit)="onSearch()">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Cerca..."
+          aria-label="Cerca"
+          [(ngModel)]="searchQuery"
+          name="search"
+        />
+        <button class="btn btn-outline-success" type="submit">Cerca</button>
+      </form>
     </div>
   </div>
 </nav>

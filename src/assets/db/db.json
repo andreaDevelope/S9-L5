@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "http://img2.wikia.nocookie.net/__cb20100624111733/logopedia/images/9/9e/Fiat_logo_2000.png",
+        "model": "500L",
+        "modelImage": "https://media.ed.edmunds-media.com/fiat/500l/2016/oem/2016_fiat_500l_wagon_urbana-trekking_fq_oem_1_815.jpg",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "http://img2.wikia.nocookie.net/__cb20100624111733/logopedia/images/9/9e/Fiat_logo_2000.png",
+        "model": "500 Abarth",
+        "modelImage": "http://upload.wikimedia.org/wikipedia/commons/e/e4/Fiat_500_Abarth_front.JPG",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://listcarbrands.com/wp-content/uploads/2016/03/ford-new-logo.jpg",
+        "model": "Taurus",
+        "modelImage": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2JSnvbP192LMx-Ot5UXM3gHaFR%26pid%3DApi&f=1&ipt=70d9e8a1ccfd7f3d47ba1249cc8e85d07e9cbb06da1cbf43a09ab4daf5325201&ipo=images",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://listcarbrands.com/wp-content/uploads/2016/03/ford-new-logo.jpg",
+        "model": "Focus",
+        "modelImage": "https://upload.wikimedia.org/wikipedia/commons/0/05/Ford_Focus_RS_Mk_II.jpg",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://www.zeroto60times.com/blog/wp-content/uploads/2013/02/audi-cars-logo-emblem.jpg",
+        "model": "A3",
+        "modelImage": "https://images.hgmsites.net/hug/audi-a3-sportback-tdi-at-2014-new-york-auto-show_100463926_h.jpg",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://www.zeroto60times.com/blog/wp-content/uploads/2013/02/audi-cars-logo-emblem.jpg",
+        "model": "Q7",
+        "modelImage": "https://stat.overdrive.in/wp-content/odgallery/2017/10/38319_Audi-Q7-2017-050.JPG",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]

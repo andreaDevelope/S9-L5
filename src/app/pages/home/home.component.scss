@@ -1,30 +1,36 @@
 .card {
-  width: 30%;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .card img {
   width: 100%;
+  height: 250px;
 }
 
 .card-hero {
-  width: 30%;
+  width: 50%;
   margin-inline: auto;
 }
 
 .card-hero img {
   width: 100%;
   margin-inline: auto;
+  height: 300px;
+}
+
+.img-logo {
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .card-hero {
   opacity: 0;
   transform: translateX(-100%);
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-.card {
-  opacity: 0;
-  transform: translateX(100%);
   transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 

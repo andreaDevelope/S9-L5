@@ -1,1 +1,35 @@
-<p>audi works!</p>
+<div class="hero" *ngIf="audiArr.length > 0">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center pt-5">Le nostre Audi</h2>
+      <div class="col-12 col-md-6" *ngFor="let car of audiArr">
+        <div class="card border-0 mt-5 rounded-5">
+          <img
+            src="{{ car.modelImage }}"
+            class="card-img-top"
+            alt="img-macchina"
+          />
+          <div
+            class="card-body text-center {{ car.availabilityClass }} rounded-5"
+          >
+            <h5 class="card-title">{{ car.model }}</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              accusantium laboriosam numquam quod, exercitationem vel nobis
+              molestiae eius explicabo magnam vitae, libero quos nesciunt
+              voluptatum dolore similique, nam cumque aut!
+            </p>
+            <div class="img-logo">
+              <img
+                src="{{ car.brandLogo }}"
+                alt="logo-car-brand"
+                class="me-2"
+              />
+              <a routerLink="" class="btn btn-primary">autosalone</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
