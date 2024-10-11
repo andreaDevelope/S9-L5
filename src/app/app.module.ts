@@ -11,6 +11,7 @@ import { HeaderComponent } from './main-components/header/header.component';
 import { FooterComponent } from './main-components/footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     NotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })
